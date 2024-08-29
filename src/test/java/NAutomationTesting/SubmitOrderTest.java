@@ -52,6 +52,9 @@ public class SubmitOrderTest extends BaseTest {
 		ProductCatelogPage pc = loginPage.getloginIntoApp("narasimhulu3k@gmail.com", "Narasimha@444");
 		ordersPages op = pc.goToOrdersPage();
 		Assert.assertTrue(op.VerifyOrdrsDisplay(productName));
+		System.out.println("productname");
+		System.out.println("productname");
+		System.out.println("productname");
 
 	}
 
