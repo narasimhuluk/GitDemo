@@ -35,6 +35,20 @@ public class ErrorValidationTest extends BaseTest {
 	}
 
 	@Test
+	public void getTexterror11() throws InterruptedException {
+		String productName = "ADIDAS ORIGINAL";
+		ProductCatelogPage pc = loginPage.getloginIntoApp("anshika@gmail.com", "Iamki000");
+
+	}
+
+	@Test
+	public void getTexterror22() throws InterruptedException {
+		String productName = "ADIDAS ORIGINAL";
+		ProductCatelogPage pc = loginPage.getloginIntoApp("anshika@gmail.com", "Iamki000");
+
+	}
+
+	@Test
 	public void getTexterror() throws InterruptedException {
 		String productName = "ADIDAS ORIGINAL";
 		ProductCatelogPage pc = loginPage.getloginIntoApp("anshika@gmail.com", "Iamki000");
