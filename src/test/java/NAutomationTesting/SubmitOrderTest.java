@@ -1,23 +1,14 @@
 package NAutomationTesting;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import NAutomationTesting.PageObjects.CartPage;
-import NAutomationTesting.PageObjects.LoginPage;
 import NAutomationTesting.PageObjects.CheckOutPage;
 import NAutomationTesting.PageObjects.ProductCatelogPage;
 import NAutomationTesting.PageObjects.conformationPage;
@@ -30,7 +21,7 @@ public class SubmitOrderTest extends BaseTest {
 
 	@Test(dataProvider = "getData", groups = "purchasetest")
 	public void orderSubmit(HashMap<String, String> input) throws IOException {
-		// TODO Auto-generated method stub
+		
 
 		ProductCatelogPage pc = loginPage.getloginIntoApp(input.get("email"), input.get("password"));
 		pc.getProductsList();
@@ -52,6 +43,9 @@ public class SubmitOrderTest extends BaseTest {
 		ProductCatelogPage pc = loginPage.getloginIntoApp("narasimhulu3k@gmail.com", "Narasimha@444");
 		ordersPages op = pc.goToOrdersPage();
 		Assert.assertTrue(op.VerifyOrdrsDisplay(productName));
+		System.out.println("productname");
+		System.out.println("productname");
+		System.out.println("productname");
 
 	}
 
